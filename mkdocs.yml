@@ -67,3 +67,5 @@ extra:
     - icon: fontawesome/brands/unity
       link: https://assetstore.unity.com/publishers/99503
       name: Gamers Oblige Unity Asset Store
+docs_dir: files
+site_dir: docs
