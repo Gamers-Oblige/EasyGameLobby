@@ -1,0 +1,69 @@
+site_name: Easy Game Lobby
+nav:
+  - Home: index.md
+  - Getting Started:
+    - First Steps: getting-started/first-steps.md
+    - Template Settings and Concepts: getting-started/template-settings-and-concepts.md
+    - Lobby Settings: getting-started/lobby-settings.md
+  - Managing Lobbies:
+    - Lobby Manager: managing-lobbies/lobby-manager.md
+    - Local Lobby: managing-lobbies/local-lobby.md
+    - Local Player: managing-lobbies/local-player.md
+    - Filtering lobbies:
+      - Query Builder: managing-lobbies/filtering-lobbies/query-builder.md
+      - Apply filters and Sorting to the Query Builder: managing-lobbies/filtering-lobbies/apply-query-and-sort.md
+    - Authentication: managing-lobbies/authentication.md
+  - UI Scripts:
+    - Custom Panels: ui-scripts/custom-panels.md
+    - Utility Components:
+      - Request Listener Behaviour: ui-scripts/utility-components/request-listener-behaviour.md
+      - MsgPopup: ui-scripts/utility-components/msg-popup.md
+    - Components and Prefabs:
+      - Lobby Info Prefab: ui-scripts/components-and-prefabs/lobby-info.md
+      - Player Info Prefab: ui-scripts/components-and-prefabs/player-info.md
+      - Password Popup: ui-scripts/components-and-prefabs/password-popup.md
+      - Game Start Manager: ui-scripts/components-and-prefabs/game-start-manager.md
+  - Enable Steamworks: enable-steamworks.md
+  - Others:
+    - ActionValue & LobbyActionValue: others/action-value.md
+    - RequestCooldown: others/request-cooldown.md
+    - Custom Enums: others/custom-enums.md
+    - Custom Value Types: others/custom-value-types.md
+theme:
+  name: material
+  logo: imgs/logo.svg
+  favicon: imgs/logo.svg
+  language: en
+  features:
+    - navigation.footer
+    - navigation.tabs
+    - toc.integrate
+    - search.suggest
+    - search.highlight
+    - navigation.top
+extra_css:
+  - style.css
+markdown_extensions:
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/eduardosantosf/
+      name: Eduardo Santos LinkedIn
+    - icon: fontawesome/brands/github
+      link: https://github.com/Gamers-Oblige
+      name: Gamers Oblige GitHub
+    - icon: fontawesome/brands/unity
+      link: https://assetstore.unity.com/publishers/99503
+      name: Gamers Oblige Unity Asset Store
