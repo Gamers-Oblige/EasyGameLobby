@@ -1178,7 +1178,9 @@
 
 <h1 id="local-player">Local Player</h1>
 <p class="info under-title">Implemented in: <code>EasyGameLobby</code></p>
-<p>Wraps around Player instances, providing an interface for easy management and listening to player values and events. Most data fields utilize either a <a href="../../others/action-value/#lobbyactionvalue"><code>LobbyActionValue</code></a> or an <a href="../../others/action-value/"><code>ActionValue</code></a> to facilitate value changes and event listening (Refer to their respective pages for more information). While any player can modify values locally, only the player represented by the instance can send changes to the server using the {{<a href="#updateplayerdata"><code>UpdatePlayerData</code></a>}}{{&lt; mdl-disable "<!-- markdownlint-disable MD051 -->" &gt;}} method. Do not modify any data if the current player is not the player represented by the instance.</p>
+<!-- markdownlint-disable MD051 -->
+<p>Wraps around Player instances, providing an interface for easy management and listening to player values and events. Most data fields utilize either a <a href="../../others/action-value/#lobby-action-value"><code>LobbyActionValue</code></a> or an <a href="../../others/action-value/"><code>ActionValue</code></a> to facilitate value changes and event listening (Refer to their respective pages for more information). While any player can modify values locally, only the player represented by the instance can send changes to the server using the <a href="#updateplayerdata"><code>UpdatePlayerData</code></a> method. Do not modify any data if the current player is not the player represented by the instance.</p>
+<!-- markdownlint-enable MD051 -->
 <p>Any <a href="../../getting-started/lobby-settings/#custom-lobby-and-player-values">custom player value</a> can be easily accessed by its name, as shown in the example below:</p>
 <div class="language-csharp highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">Debug</span><span class="p">.</span><span class="n">Log</span><span class="p">(</span><span class="n">LobbyManager</span><span class="p">.</span><span class="n">Instance</span><span class="p">.</span><span class="n">CurrentPlayer</span><span class="p">.</span><span class="n">MyCustomPlayerValue</span><span class="p">.</span><span class="n">Value</span><span class="p">);</span>
 </span></code></pre></div>
@@ -1200,17 +1202,17 @@
 Only visible to the host.</p>
 </li>
 <li>
-<p><strong><code>IsHost</code></strong> - <a href="../../others/action-value/">LobbyActionValue</a>&lt;bool&gt;</p>
+<p><strong><code>IsHost</code></strong> - <a href="../../others/action-value/#lobby-action-value">LobbyActionValue</a>&lt;bool&gt;</p>
 </li>
 <li>
-<p><strong><code>IsConnected</code></strong> - <a href="../../others/action-value/">LobbyActionValue</a>&lt;bool&gt;<br />
+<p><strong><code>IsConnected</code></strong> - <a href="../../others/action-value/#lobby-action-value">LobbyActionValue</a>&lt;bool&gt;<br />
 True if the player is connected to the relay.
 Only visible to the host.</p>
 </li>
 <li>
-<p><strong><code>Any Custom Player Value</code></strong> - <a href="../../others/action-value/">LobbyActionValue</a>&lt;T&gt;</p>
+<p><strong><code>Any Custom Player Value</code></strong> - <a href="../../others/action-value/#lobby-action-value">LobbyActionValue</a>&lt;T&gt;</p>
 </li>
-<li><strong><code>CustomDataMap</code></strong> - <em>Dictionary&lt;string, <a href="../../others/custom-value-types/#illobbyvalue-interface">ILobbyValue</a>&gt;</em></li>
+<li><strong><code>CustomDataMap</code></strong> - <em>Dictionary&lt;string, <a href="../../others/custom-value-types/">ILobbyValue</a>&gt;</em></li>
 </ul>
 <div class="language-csharp highlight"><span class="filename">Reading player values</span><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="n">Debug</span><span class="p">.</span><span class="n">Log</span><span class="p">(</span><span class="n">LobbyManager</span><span class="p">.</span><span class="n">Instance</span><span class="p">.</span><span class="n">CurrentPlayer</span><span class="p">.</span><span class="n">IsHost</span><span class="p">.</span><span class="n">Value</span><span class="p">);</span>
 </span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="n">Debug</span><span class="p">.</span><span class="n">Log</span><span class="p">(</span><span class="n">LobbyManager</span><span class="p">.</span><span class="n">Instance</span><span class="p">.</span><span class="n">CurrentPlayer</span><span class="p">.</span><span class="n">MyCustomPlayerValue</span><span class="p">.</span><span class="n">Value</span><span class="p">);</span>

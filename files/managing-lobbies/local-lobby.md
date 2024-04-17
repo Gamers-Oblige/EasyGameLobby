@@ -2,9 +2,9 @@
 
 Implemented in: `EasyGameLobby`
 {:.info .under-title}
-
-Local Lobby wraps around Lobby instances, providing an interface for easy management and listening to lobby values and events. Most data fields utilize either a [`LobbyActionValue`](../others/action-value.md#lobbyactionvalue) or an [`ActionValue`](../others/action-value.md) to facilitate value changes and event listening (Refer to their respective pages for more information). While any player can modify values locally, only the host can send changes to the server using the {{[`UpdateLobbyData`](#updatelobbydata)}}{{< mdl-disable "<!-- markdownlint-disable MD051 -->" >}} method. Do not modify any data if the current player is not the host.
-
+<!-- markdownlint-disable MD051 -->
+Local Lobby wraps around Lobby instances, providing an interface for easy management and listening to lobby values and events. Most data fields utilize either a [`LobbyActionValue`](../others/action-value.md#lobby-action-value) or an [`ActionValue`](../others/action-value.md) to facilitate value changes and event listening (Refer to their respective pages for more information). While any player can modify values locally, only the host can send changes to the server using the [`UpdateLobbyData`](#updatelobbydata) method. Do not modify any data if the current player is not the host.
+<!-- markdownlint-enable MD051 -->
 All data of joined lobbies are automatically synchronized with the server, and the host is responsible for updating the lobby data.
 
 Any [custom lobby value](../getting-started/lobby-settings.md#custom-lobby-and-player-values) can be easily accessed by its name, as shown in the example below:
@@ -44,12 +44,12 @@ await LobbyManager.Instance.CreateLobby(newLobby, "My Lobby", 4);
 
 - **`Id`** - *string* Read-Only
 - **`Code`** - *string* Read-Only
-- **`Name`** - [LobbyActionValue](../others/action-value.md)<string\>
-- **`MaxPlayers`** - [LobbyActionValue](../others/action-value.md)<int\>
-- **`IsPrivate`** - [LobbyActionValue](../others/action-value.md)<bool\>
-- **`IsLocked`** - [LobbyActionValue](../others/action-value.md)<bool\>
-- **`HostId`** - [LobbyActionValue](../others/action-value.md)<string\>
-- **`Password`** - [LobbyActionValue](../others/action-value.md)<string\>  
+- **`Name`** - [LobbyActionValue](../others/action-value.md#lobby-action-value)<string\>
+- **`MaxPlayers`** - [LobbyActionValue](../others/action-value.md#lobby-action-value)<int\>
+- **`IsPrivate`** - [LobbyActionValue](../others/action-value.md#lobby-action-value)<bool\>
+- **`IsLocked`** - [LobbyActionValue](../others/action-value.md#lobby-action-value)<bool\>
+- **`HostId`** - [LobbyActionValue](../others/action-value.md#lobby-action-value)<string\>
+- **`Password`** - [LobbyActionValue](../others/action-value.md#lobby-action-value)<string\>  
 Only visible to the host.
 
 - **`HasPassword`** - [ActionValue](../others/action-value.md)<bool\>
@@ -58,9 +58,9 @@ Only visible to the host.
 Maps the Netcode client id to the [LocalPlayer](local-player.md).
 Only visible to the host.
 
-- **`RelayCode`** - [LobbyActionValue](../others/action-value.md)<string\>
-- **`Any Custom Lobby Value`** - [LobbyActionValue](../others/action-value.md)<T\>
-- **`CustomDataMap`** - *Dictionary<string, [ILobbyValue](../others/custom-value-types.md#illobbyvalue-interface)\>*
+- **`RelayCode`** - [LobbyActionValue](../others/action-value.md#lobby-action-value)<string\>
+- **`Any Custom Lobby Value`** - [LobbyActionValue](../others/action-value.md#lobby-action-value)<T\>
+- **`CustomDataMap`** - *Dictionary<string, [ILobbyValue](../others/custom-value-types.md)\>*
 
 ```csharp title="Reading lobby values"
 Debug.Log(LobbyManager.Instance.CurrentLobby.Name.Value);

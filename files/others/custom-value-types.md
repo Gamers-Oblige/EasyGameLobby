@@ -46,7 +46,10 @@ Determines the visibility of the value. Refer to the [Data access and visibility
 
 | Parameter | Type | Description |
 | --- | --- | --- |
-| **value** | *string* | The new value to be set. |
+| **value**<span class="required">\*</span>  | *string* | The new value to be set. |
+
+*<span class="required">\*</span> Required parameter.*
+{:.info .under-table}
 
 **Description**
 

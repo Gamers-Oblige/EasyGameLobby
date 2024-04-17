@@ -13,7 +13,7 @@ Easy Game Lobby is your solution for streamlining the development of multiplayer
 Be aware that Easy Game Lobby only handles the lobby system, from connecting players together within Relay and starting your game scene. It does not handle the game's networking or gameplay logic.
 
 <span class="text-center margin-top-40">
-  <a href="first-steps/" class="btn btn-primary" role="button">:fontawesome-solid-play: Getting Started</a>
+  <a href="/getting-started/first-steps/" class="btn btn-primary" role="button">:fontawesome-solid-play: Getting Started</a>
   <a href="https://assetstore.unity.com/packages/slug/282001" class="btn btn-primary" role="button">:simple-unity: Download Package</a>
 </span>
 

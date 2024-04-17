@@ -3,7 +3,7 @@
 Implemented in: `EasyGameLobby.Infrastructure`
 {:.info .under-title}
 
-Query Builder allows you to easily filter lobbies based on any lobby value including custom values. The query builder can be used to filter lobbies on the [`GetLobbies`](../lobby-manager.md#getlobbies) and [`GetLobbiesAsLocal`](../lobby-manager.md#getlobbiesaslocal) methods, as well as used to quickly join a lobby with the [`QuickJoinLobby`](../lobby-manager.md#quickjoinlobby) method.
+Query Builder allows you to easily filter lobbies based on any lobby value including custom values. The query builder can be used to filter lobbies on the [`GetLobbies`](../lobby-manager.md#getlobbies) and [`GetLobbiesAsLocal`](../lobby-manager.md#getlobbies) methods, as well as used to quickly join a lobby with the [`QuickJoinLobby`](../lobby-manager.md#quickjoinlobby) method.
 
 Every Query Builder method returns itself, allowing you to chain multiple filters together.
 

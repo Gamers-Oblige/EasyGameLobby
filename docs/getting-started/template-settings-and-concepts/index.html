@@ -1230,7 +1230,7 @@
 <h3 id="search-panel">Search Panel</h3>
 <blockquote>
 <p>Once the player is logged in, the login panel will automatically change the active panel to the search panel.</p>
-<p>If the player leaves a lobby, the <a href="../../ui-scripts/custom-panels/#panels-manager">Panels Manager</a> will automatically change the active panel to the search panel.</p>
+<p>If the player leaves a lobby, the <a href="../../ui-scripts/custom-panels/#panelsmanager">Panels Manager</a> will automatically change the active panel to the search panel.</p>
 </blockquote>
 <p>Settings:</p>
 <ul>
@@ -1242,14 +1242,14 @@
 <p>Contains two sub-panels: CreateLobby Panel, JoinByCode Panel, and a Connecting PopUp.</p>
 <h3 id="lobby-panel">Lobby Panel</h3>
 <blockquote>
-<p>Once the player joins a lobby, the <a href="../../ui-scripts/custom-panels/#panels-manager">Panels Manager</a> will automatically change the active panel to the lobby panel.</p>
+<p>Once the player joins a lobby, the <a href="../../ui-scripts/custom-panels/#panelsmanager">Panels Manager</a> will automatically change the active panel to the lobby panel.</p>
 </blockquote>
 <p>It contains a script called <code>Game Start Manager</code> with the following settings:</p>
 <ul>
 <li><strong>Should everyone be ready:</strong> All players must be ready before starting the game if enabled.</li>
 <li><strong>Should lock lobby:</strong> Locks the lobby upon game start, preventing new players from joining if enabled.</li>
 <li><strong>Min players to start:</strong> Minimum number of players required to start the game.</li>
-<li><strong>Should load scene:</strong> Loads the game scene upon game start if enabled, otherwise triggers the <a href="../../ui-scripts/custom-panels/#on-game-start"><code>OnGameStart</code></a> event.</li>
+<li><strong>Should load scene:</strong> Loads the game scene upon game start if enabled, otherwise triggers the <a href="../../ui-scripts/components-and-prefabs/game-start-manager/#events"><code>OnGameStart</code></a> event.</li>
 <li><strong>Game scene name:</strong> Name of the scene loaded upon game start.</li>
 <li><strong>Load scene mode:</strong> Mode in which the scene is loaded.</li>
 </ul>

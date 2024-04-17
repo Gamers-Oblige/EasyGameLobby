@@ -219,8 +219,6 @@ Triggered when the player leaves the lobby.
 
 Every Lobby request has it's [rate limits](https://docs.unity.com/ugs/en-us/manual/lobby/manual/rate-limits), [`RequestCooldown`](../others/request-cooldown.md) is a class that helps managing the rate limit of the requests. All RequestCooldown are static readonly fields that can be accessed from the `LobbyManager` class.
 
-See more about the [RequestCooldown](../others/request-cooldown.md) class.
-
 **Available RequestCooldown:**
 
 - `QueryCooldown`
@@ -233,3 +231,5 @@ See more about the [RequestCooldown](../others/request-cooldown.md) class.
 - `GetJoinedLobbiesCooldown`
 - `ReconnectCooldown`
 - `HeartbeatCooldown`
+
+See more about the [RequestCooldown](../others/request-cooldown.md) class.

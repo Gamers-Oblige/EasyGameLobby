@@ -41,4 +41,4 @@ Sets the `Value` of the action value without triggering the `OnChanged` event.
 
 ## Lobby Action Value
 
-The `LobbyActionValue` class is a generic class that implements the `ActionValue` class and the [`ILobbyValue`](custom-value-types.md#ilobbyvalue-interface) interface. It has the same properties and methods as the `ActionValue` class, but it also enables the [`LocalPlayer`](../managing-lobbies/local-player.md) and [`LocalLobby`](../managing-lobbies/local-lobby.md) classes to use it as a custom value, detecting changes and sending them to the server.
+The `LobbyActionValue` class is a generic class that implements the `ActionValue` class and the [`ILobbyValue`](custom-value-types.md) interface. It has the same properties and methods as the `ActionValue` class, but it also enables the [`LocalPlayer`](../managing-lobbies/local-player.md) and [`LocalLobby`](../managing-lobbies/local-lobby.md) classes to use it as a custom value, detecting changes and sending them to the server.

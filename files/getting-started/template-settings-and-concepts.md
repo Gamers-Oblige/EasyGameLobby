@@ -42,7 +42,7 @@ Enabling "Skip using Steam" or "Skip using last login name" logs in the player a
 
 > Once the player is logged in, the login panel will automatically change the active panel to the search panel.
 >
-> If the player leaves a lobby, the [Panels Manager](../ui-scripts/custom-panels.md#panels-manager) will automatically change the active panel to the search panel.
+> If the player leaves a lobby, the [Panels Manager](../ui-scripts/custom-panels.md#panelsmanager) will automatically change the active panel to the search panel.
 
 Settings:
 
@@ -55,13 +55,13 @@ Contains two sub-panels: CreateLobby Panel, JoinByCode Panel, and a Connecting P
 
 ### Lobby Panel
 
-> Once the player joins a lobby, the [Panels Manager](../ui-scripts/custom-panels.md#panels-manager) will automatically change the active panel to the lobby panel.
+> Once the player joins a lobby, the [Panels Manager](../ui-scripts/custom-panels.md#panelsmanager) will automatically change the active panel to the lobby panel.
 
 It contains a script called `Game Start Manager` with the following settings:
 
 - **Should everyone be ready:** All players must be ready before starting the game if enabled.
 - **Should lock lobby:** Locks the lobby upon game start, preventing new players from joining if enabled.
 - **Min players to start:** Minimum number of players required to start the game.
-- **Should load scene:** Loads the game scene upon game start if enabled, otherwise triggers the [`OnGameStart`](../ui-scripts/custom-panels.md#on-game-start) event.
+- **Should load scene:** Loads the game scene upon game start if enabled, otherwise triggers the [`OnGameStart`](../ui-scripts/components-and-prefabs/game-start-manager.md#events) event.
 - **Game scene name:** Name of the scene loaded upon game start.
 - **Load scene mode:** Mode in which the scene is loaded.

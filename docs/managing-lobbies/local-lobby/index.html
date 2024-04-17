@@ -1211,7 +1211,9 @@
 
 <h1 id="local-lobby">Local Lobby</h1>
 <p class="info under-title">Implemented in: <code>EasyGameLobby</code></p>
-<p>Local Lobby wraps around Lobby instances, providing an interface for easy management and listening to lobby values and events. Most data fields utilize either a <a href="../../others/action-value/#lobbyactionvalue"><code>LobbyActionValue</code></a> or an <a href="../../others/action-value/"><code>ActionValue</code></a> to facilitate value changes and event listening (Refer to their respective pages for more information). While any player can modify values locally, only the host can send changes to the server using the {{<a href="#updatelobbydata"><code>UpdateLobbyData</code></a>}}{{&lt; mdl-disable "<!-- markdownlint-disable MD051 -->" &gt;}} method. Do not modify any data if the current player is not the host.</p>
+<!-- markdownlint-disable MD051 -->
+<p>Local Lobby wraps around Lobby instances, providing an interface for easy management and listening to lobby values and events. Most data fields utilize either a <a href="../../others/action-value/#lobby-action-value"><code>LobbyActionValue</code></a> or an <a href="../../others/action-value/"><code>ActionValue</code></a> to facilitate value changes and event listening (Refer to their respective pages for more information). While any player can modify values locally, only the host can send changes to the server using the <a href="#updatelobbydata"><code>UpdateLobbyData</code></a> method. Do not modify any data if the current player is not the host.</p>
+<!-- markdownlint-enable MD051 -->
 <p>All data of joined lobbies are automatically synchronized with the server, and the host is responsible for updating the lobby data.</p>
 <p>Any <a href="../../getting-started/lobby-settings/#custom-lobby-and-player-values">custom lobby value</a> can be easily accessed by its name, as shown in the example below:</p>
 <div class="language-csharp highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">Debug</span><span class="p">.</span><span class="n">Log</span><span class="p">(</span><span class="n">LobbyManager</span><span class="p">.</span><span class="n">Instance</span><span class="p">.</span><span class="n">CurrentLobby</span><span class="p">.</span><span class="n">MyCustomValue</span><span class="p">.</span><span class="n">Value</span><span class="p">);</span>
@@ -1239,13 +1241,13 @@
 <ul>
 <li><strong><code>Id</code></strong> - <em>string</em> Read-Only</li>
 <li><strong><code>Code</code></strong> - <em>string</em> Read-Only</li>
-<li><strong><code>Name</code></strong> - <a href="../../others/action-value/">LobbyActionValue</a>&lt;string&gt;</li>
-<li><strong><code>MaxPlayers</code></strong> - <a href="../../others/action-value/">LobbyActionValue</a>&lt;int&gt;</li>
-<li><strong><code>IsPrivate</code></strong> - <a href="../../others/action-value/">LobbyActionValue</a>&lt;bool&gt;</li>
-<li><strong><code>IsLocked</code></strong> - <a href="../../others/action-value/">LobbyActionValue</a>&lt;bool&gt;</li>
-<li><strong><code>HostId</code></strong> - <a href="../../others/action-value/">LobbyActionValue</a>&lt;string&gt;</li>
+<li><strong><code>Name</code></strong> - <a href="../../others/action-value/#lobby-action-value">LobbyActionValue</a>&lt;string&gt;</li>
+<li><strong><code>MaxPlayers</code></strong> - <a href="../../others/action-value/#lobby-action-value">LobbyActionValue</a>&lt;int&gt;</li>
+<li><strong><code>IsPrivate</code></strong> - <a href="../../others/action-value/#lobby-action-value">LobbyActionValue</a>&lt;bool&gt;</li>
+<li><strong><code>IsLocked</code></strong> - <a href="../../others/action-value/#lobby-action-value">LobbyActionValue</a>&lt;bool&gt;</li>
+<li><strong><code>HostId</code></strong> - <a href="../../others/action-value/#lobby-action-value">LobbyActionValue</a>&lt;string&gt;</li>
 <li>
-<p><strong><code>Password</code></strong> - <a href="../../others/action-value/">LobbyActionValue</a>&lt;string&gt;<br />
+<p><strong><code>Password</code></strong> - <a href="../../others/action-value/#lobby-action-value">LobbyActionValue</a>&lt;string&gt;<br />
 Only visible to the host.</p>
 </li>
 <li>
@@ -1258,10 +1260,10 @@ Maps the Netcode client id to the <a href="../local-player/">LocalPlayer</a>.
 Only visible to the host.</p>
 </li>
 <li>
-<p><strong><code>RelayCode</code></strong> - <a href="../../others/action-value/">LobbyActionValue</a>&lt;string&gt;</p>
+<p><strong><code>RelayCode</code></strong> - <a href="../../others/action-value/#lobby-action-value">LobbyActionValue</a>&lt;string&gt;</p>
 </li>
-<li><strong><code>Any Custom Lobby Value</code></strong> - <a href="../../others/action-value/">LobbyActionValue</a>&lt;T&gt;</li>
-<li><strong><code>CustomDataMap</code></strong> - <em>Dictionary&lt;string, <a href="../../others/custom-value-types/#illobbyvalue-interface">ILobbyValue</a>&gt;</em></li>
+<li><strong><code>Any Custom Lobby Value</code></strong> - <a href="../../others/action-value/#lobby-action-value">LobbyActionValue</a>&lt;T&gt;</li>
+<li><strong><code>CustomDataMap</code></strong> - <em>Dictionary&lt;string, <a href="../../others/custom-value-types/">ILobbyValue</a>&gt;</em></li>
 </ul>
 <div class="language-csharp highlight"><span class="filename">Reading lobby values</span><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="n">Debug</span><span class="p">.</span><span class="n">Log</span><span class="p">(</span><span class="n">LobbyManager</span><span class="p">.</span><span class="n">Instance</span><span class="p">.</span><span class="n">CurrentLobby</span><span class="p">.</span><span class="n">Name</span><span class="p">.</span><span class="n">Value</span><span class="p">);</span>
 </span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="n">Debug</span><span class="p">.</span><span class="n">Log</span><span class="p">(</span><span class="n">LobbyManager</span><span class="p">.</span><span class="n">Instance</span><span class="p">.</span><span class="n">CurrentLobby</span><span class="p">.</span><span class="n">MyCustomValue</span><span class="p">.</span><span class="n">Value</span><span class="p">);</span>
