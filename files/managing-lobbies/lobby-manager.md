@@ -229,6 +229,7 @@ Every Lobby request has it's [rate limits](https://docs.unity.com/ugs/en-us/manu
 - `UpdatePlayerCooldown`
 - `UpdateLobbyCooldown`
 - `GetJoinedLobbiesCooldown`
+- `GetLobbyCooldown`
 - `ReconnectCooldown`
 - `HeartbeatCooldown`
 
