@@ -1180,7 +1180,7 @@
 <li><strong>Should Everyone Be Ready</strong>: If true, all players must be ready to start the game.</li>
 <li><strong>Should Lock Lobby</strong>: If true, the lobby will be locked when the game starts, preventing new players from joining.</li>
 <li><strong>Min Players To Start</strong>: The minimum number of players required to start the game.</li>
-<li><strong>Game Scene Name</strong>: The name of the scene to load, if left empty the event <a href="#events"><code>OnGameStart</code></a> will be triggered.</li>
+<li><strong>Game Scene Name</strong>: The name of the scene to load, if left empty the scene won't be loaded but the <a href="#events"><code>OnGameStart</code></a> event will still be triggered.</li>
 </ul>
 <p>Note that if the lobby is not locked, players can still join the lobby after the game has started and it's up to you to sync the game state with the new player.</p>
 <h2 id="properties">Properties</h2>
@@ -1190,7 +1190,7 @@
 </ul>
 <h2 id="events">Events</h2>
 <ul>
-<li><strong>OnGameStart</strong>: Triggered when the game starts. Only triggered if the <code>Game Scene Name</code> is empty.</li>
+<li><strong>OnGameStart</strong>: Triggered when the game starts.</li>
 <li><strong>OnNetworkSpawned</strong>: Triggered when the player is connected in the network. (Triggered by the <a href="https://docs-multiplayer.unity3d.com/netcode/current/basics/networkbehavior/"><code>NetworkBehaviour</code></a> inherited class).</li>
 </ul>
 

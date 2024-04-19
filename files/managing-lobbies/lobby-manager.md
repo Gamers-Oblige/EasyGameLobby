@@ -5,6 +5,8 @@ Implemented in: `EasyGameLobby`
 
 The Lobby Manager is the main class that you will interact with when working with lobbies, it's a singleton and won't be destroyed on load. It is responsible for managing all lobby functionalities such as creating and keeping the lobby active sending [`Heartbeats`](../getting-started/lobby-settings.md#lobby-settings) and everything you may need while working with lobbies.
 
+The Lobby Manager also handles when the player is automatically disconnected from the lobby, see more about in the [Settings](../getting-started//lobby-settings.md) page.
+
 Unless you are creating your own lobby UI from scratch or modifying the existing one, you will not need to interact with the Lobby Manager directly. However, it is important to understand its properties and methods.
 
 ## Properties
