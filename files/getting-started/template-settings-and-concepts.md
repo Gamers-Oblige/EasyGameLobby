@@ -11,7 +11,7 @@ The template scene consists of three essential Game Objects:
 The UI system contains:
 
 - **Panels:** Display various lobby states such as login, search, and lobby. Each panel has its own script with customizable settings for its behavior and elements, including buttons to show the panel and set it as the default.
-- **Sub-panels:** Smaller panels that interact with the main panels, like the Create Lobby panel inside the Search panel. Each sub-panel has its own script with settings for its behavior and elements.
+- **Sub-panels:** Smaller panels nested within a panel, such as the Create Lobby panel within the Search panel. Each sub-panel has its own script that controls its behavior and elements independently of the main panel.
 - **Popups:** Small windows showing messages to players, like the Loading popup. Each popup has its own script or is controlled by the panel script.
 - **Elements:** Prefabs, Components, buttons, texts, and input fields controlled by panels and sub-panels. Most are optional, but red-marked elements are mandatory, be sure to check the panel they are attached to, before removing them.
 
@@ -57,7 +57,7 @@ Contains two sub-panels: CreateLobby Panel, JoinByCode Panel, and a Connecting P
 
 > Once the player joins a lobby, the [Panels Manager](../ui-scripts/custom-panels.md#panelsmanager) will automatically change the active panel to the lobby panel.
 
-It contains a script called `Game Start Manager` with the following settings:
+It contains a script called [`Game Start Manager`](../ui-scripts/components-and-prefabs/game-start-manager.md) with the following settings:
 
 - **Should everyone be ready:** All players must be ready before starting the game if enabled.
 - **Should lock lobby:** Locks the lobby upon game start, preventing new players from joining if enabled.

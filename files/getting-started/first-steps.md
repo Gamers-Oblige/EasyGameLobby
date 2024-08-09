@@ -20,6 +20,8 @@ After importing the Easy Game Lobby package into your Unity project, enable the 
 
 ## Loading the Template
 
-If you imported the "Runtime/Templates" folder, locate the template scene at "Templates/Scenes". Add the scene to your build settings and open it to see the lobby in action. (You may need to import the TextMesh Pro package to display texts correctly, if not already imported. Reload the scene after importing.)
+If you imported the "Runtime/Templates" folder, choose one of the available templates. Add the scene to your build settings and open it to see the lobby in action. (You may need to import the TextMesh Pro package to display texts correctly, if not imported already. Reload the scene after importing.)
 
-The basics of the lobby should already be functional, allowing you to start testing immediately. However, you may need to adjust [certain settings](template-settings-and-concepts.md) to ensure full compatibility with your project.
+Create a new scene called "GameScene" and add it to the build, it's the default scene name to be loaded when starting a game on the lobby template, but you can change it in the [`GameStartManager`](../ui-scripts/components-and-prefabs/game-start-manager.md) script.
+
+The basics functions of the lobby should already be functional, allowing you to start developing your game immediately using Netcode for GameObjects. However, you may need to adjust [certain settings](template-settings-and-concepts.md) to ensure full compatibility with your project.

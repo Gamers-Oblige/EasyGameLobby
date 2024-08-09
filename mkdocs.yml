@@ -13,6 +13,7 @@ nav:
       - Query Builder: managing-lobbies/filtering-lobbies/query-builder.md
       - Apply filters and Sorting to the Query Builder: managing-lobbies/filtering-lobbies/apply-query-and-sort.md
     - Authentication: managing-lobbies/authentication.md
+  - Customized Themes: customized-themes.md
   - UI Scripts:
     - Custom Panels: ui-scripts/custom-panels.md
     - Utility Components:
@@ -69,3 +70,8 @@ extra:
       name: Gamers Oblige Unity Asset Store
 docs_dir: files
 site_dir: docs
+plugins:
+  - search
+  # - pdf-export:
+  #     combined: true
+  #     combined_output_path: pdf/documentation.pdf
